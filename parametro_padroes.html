@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <div id="teste"></div>
+    <script>
+      
+        // Parâmetros padrões para se prevenir  de possiveis erros ao longo da aplicação
+        function contarUmaHistoria(personagem = 'Fubá', atividade = 'correr no parque', nomeDono = 'João') {
+            return `Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nomeDono} e eles viveram  felizes para sempre`
+        }
+        // Aqui sobreescrevemos os valores antes padroes com novas entradas, mas caso uma entrada seja errada e entrasse como "undefined" seria chamado o valor padrao.
+        document.getElementById('teste').innerHTML = contarUmaHistoria(undefined, 'enterrar os brinquedos', 'Pedro')
+    </script>
+  </body>
+</html>

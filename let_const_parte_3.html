@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <script>
+      //escopos: global, função, bloco
+
+      // o const, assim como o let nao sofre elevação como o var ele fica amarrado ao bloco atual e inferiores.  
+
+      // porém, ele não podera ser modificado em qualquer instancia do codigo
+
+      const SERIE = 'The Walking Dead'
+
+      function escopoFuncao() {
+        if (true) {
+          if (true) {
+          }
+        }
+      }
+
+      escopoFuncao();
+
+      {
+        
+      }
+
+      
+    </script>
+  </body>
+</html>

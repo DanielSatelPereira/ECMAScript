@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <script>
+      //escopos: global, função, bloco
+
+      // o let nao  sofre elevação como o var ele fica amarrado ao bloco atual e inferiores.  
+
+      function escopoFuncao() {
+        if (true) {
+          if (true) {
+          }
+        }
+      }
+
+      escopoFuncao();
+
+      {
+        var serie = "Friends";
+        let serie2 = "Game of Thrones";
+      }
+
+      console.log("funcao: ", serie);
+      console.log("funcao: ", serie2);
+    </script>
+  </body>
+</html>

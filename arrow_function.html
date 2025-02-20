@@ -1,0 +1,66 @@
+<html>
+  <body>
+    <script>
+      /*
+        let multiplicador = function () {
+            return 5 * 5
+        }
+        */
+      //console.log(multiplicador)
+      // console.log(multiplicador())
+
+      /*
+        let multiplicador = () => {
+            return 5 * 5
+        }
+        */
+
+      /*
+        let multiplicador = (n) => {
+            return n * n
+        }
+        */
+
+      /*
+        let multiplicador = n => {
+            return n * n
+        }
+        */
+
+      //let multiplicador = n => n * n
+
+      let multiplicador = (n1, n2) => n1 * n2
+
+      console.log('Este valor se refere a função de multiplicação: ', multiplicador(5, 4))
+
+      /*
+        let parOuImpar = function(n) {
+            // 8 % 2 = 0 = é par
+            // 11 % 2 = 1 = é ímpar
+            if(n % 2 == 0) {
+                return 'É par'
+            } else {
+                return 'É impar'
+            }          
+        }
+        */
+
+      /*
+        let parOuImpar = n => {
+            // 8 % 2 = 0 = é par
+            // 11 % 2 = 1 = é ímpar
+            if(n % 2 == 0) {
+                return 'É par'
+            } else {
+                return 'É impar'
+            }          
+        }
+        */
+
+      let parOuImpar = (n) => (n % 2 == 0 ? "É par" : "É impar");
+
+      console.log('Este outro valor é sobre a função parOuImpar: ', parOuImpar(2048));
+      // aproveite os retornos da arrow function pois ela diminui o tamanho e peso do seu codigo deixo a refatoração dele cada vez melhor como mostrado acima.
+    </script>
+  </body>
+</html>
