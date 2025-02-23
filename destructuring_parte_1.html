@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <div id="teste"></div>
+    <script>
+      /*
+      // destructring assignment no contexto de arrays
+
+      let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamâo']
+      let a = frutas[0]   
+      console.log(a)
+
+      // o operador destruct é definido por colchetes do lado esquerdo de "=" e dentro dele é definido as variaveis para onde irão os valores do array que ele retirou as informações
+      let [ a, b, c, d ] = frutas
+
+      let [ a, b, , c] = frutas
+
+      let [ a, b = 'Abacate', c, d, e = 'Banana' ] = frutas
+
+      console.log(a, b, c, d, e)
+      */
+
+      let coisas = [["Abacaxi", "Uva", "Pera", "Mamâo"],["josé", "Maria"],];
+      let [,[,x]] = coisas
+      console.log(x)
+
+    </script>
+  </body>
+</html>
